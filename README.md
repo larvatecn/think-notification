@@ -12,5 +12,5 @@
 
 ## 安装
 ~~~
-composer require yunwuxin/think-notification
+composer require larva/think-notification
 ~~~
