@@ -16,9 +16,9 @@ use yunwuxin\notification\Notifiable;
 /**
  * Class Notification
  * @package yunwuxin
- * @property string  $queue
+ * @property string $queue
  * @property integer $delay
- * @property string  $connection
+ * @property string $connection
  */
 abstract class Notification
 {

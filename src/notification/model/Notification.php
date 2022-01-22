@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 namespace yunwuxin\notification\model;
 
+use think\Collection;
 use think\Model;
 
 /**
@@ -17,16 +18,16 @@ use think\Model;
  * @package yunwuxin\notification\model
  *
  * @property integer $id
- * @property string  $type
- * @property string  $data
- * @property string  $read_time
+ * @property string $type
+ * @property string $data
+ * @property string $read_time
  */
 class Notification extends Model
 {
 
     protected $type = [
         'read_time' => 'datetime',
-        'data'      => 'array',
+        'data' => 'array',
     ];
 
     public function notifiable()
@@ -44,8 +45,8 @@ class Notification extends Model
     /**
      * 转换数据集为数据集对象
      * @access public
-     * @param  array|Collection $collection 数据集
-     * @param  string           $resultSetType 数据集类
+     * @param array|Collection $collection 数据集
+     * @param string $resultSetType 数据集类
      * @return Collection
      */
     public function toCollection(iterable $collection = [], string $resultSetType = null): Collection
